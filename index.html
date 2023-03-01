@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Love for You</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>My Love for You</h1>
+		<p>Dear TSTS,</p>
+		<p>I wanted to create this website to express how much I love you. You are the most important person in my life, and I am grateful for every moment that we spend together.</p>
+		<p>I hope this website will bring a smile to your face and remind you of how much you mean to me.</p>
+		<p>Love always,</p>
+		<p>Your Sabry</p>
+	</div>
+    <script>
+        function updateTime() {
+          const now = new Date();
+          const startDate = new Date('October 28, 2022');
+          const diff = now.getTime() - startDate.getTime();
+  
+          const seconds = Math.floor(diff / 1000 % 60);
+          const minutes = Math.floor(diff / 1000 / 60 % 60);
+          const hours = Math.floor(diff / 1000 / 60 / 60 % 24);
+          const days = Math.floor(diff / 1000 / 60 / 60 / 24);
+  
+          document.getElementById('days').textContent = days;
+          document.getElementById('hours').textContent = hours;
+          document.getElementById('minutes').textContent = minutes;
+          document.getElementById('seconds').textContent = seconds;
+        }
+  
+        setInterval(updateTime, 1000);
+      </script>
+          
+          <h2 style="text-align: center;">Counting our time together</h2>
+      <div class="timer-container">
+        <div class="timer">
+          <span id="days"></span>
+          <span class="timer-labels">Days</span>
+        </div>
+        <div class="timer">
+          <span id="hours"></span>
+          <span class="timer-labels">Hours</span>
+        </div>
+        <div class="timer">
+          <span id="minutes"></span>
+          <span class="timer-labels">Minutes</span>
+        </div>
+        <div class="timer">
+          <span id="seconds"></span>
+          <span class="timer-labels">Seconds</span>
+        </div>
+      </div>
+      <h3 style="text-align: center;">And For Eternity⭐</h3>
+      <br>
+      
+</body>
+</html>
